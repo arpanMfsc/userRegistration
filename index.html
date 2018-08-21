@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body>
+	<header>
+		<img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13035163767397.png" class="logo center">
+		<h4 class='white-text center'>User Registration </h4>
+	</header>
+	
+	<div class="container main">
+	<div class="row">
+
+    <!-- form -->
+    <form class="col s12" action="" method="post">
+      <div class="card-panel">
+      	<div class="row">
+	      	<div class="input-group-heading">Personal Information</div>
+	        <div class="input-field col l4 s12">
+	          <i class="material-icons prefix">account_circle</i>
+	          <input placeholder="Placeholder" id="first_name" name="firstName" type="text" class="validate" required>
+	          <label for="first_name">First Name</label>
+	        </div>
+	        <div class="input-field col l4 s12">
+	          <i class="material-icons prefix">account_circle</i>
+	          <input id="last_name" type="text" name="middleName" class="validate">
+	          <label for="last_name">Middle Name</label>
+	        </div>
+	        <div class="input-field col l4 s12">
+	          <i class="material-icons prefix">account_circle</i>
+	          <input id="last_name" type="text" class="validate" name="lastName" required>
+	          <label for="last_name">Last Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	        	<i class="material-icons prefix">wc</i>
+	            <select required>
+	              <option value="" disabled selected>Choose your option</option>
+	              <option value="1">Male</option>
+	              <option value="2">Female</option>
+	            </select>
+	            <label>Select Gender</label>
+	       </div>
+	       <div class="input-field col s6">
+	           	<input type="text" class="col s6 datepicker" name="dob" required id="dob"/>
+	            <label>Date of birth</label>
+	       </div>
+
+
+    	</div>
+    	<div class="row">
+	      	<div class="input-group-heading">Contact Details</div>
+	        <div class="input-field col s12">
+	       
+	          <i class="material-icons prefix">email</i>
+	          <input placeholder="someone@somecompany.com" name="email" id="email" type="email" class="validate" required>
+	          <label for="first_name">Email Address</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <i class="material-icons prefix">phone</i>
+	          <input id="phone" type="text"   pattern="\d*" class="validate" name="phone" maxlength=10 minlength=10 required>
+	          <label for="last_name">Phone No</label>
+	        </div>
+	        
+    	</div>
+		<div class="row">
+		      	<div class="input-group-heading">Chose Password</div>
+		        <div class="input-field col s12">
+		          <input placeholder="Enter Password" name="password" id="password" type="password" class="validate" required>
+		          <label>Password</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <input placeholder="Re-type your Password" name="confirm_password" id="confirm_password" type="password" class="validate" required>
+		          <label>Confirm Password</label>
+		        </div>
+		       
+		        
+	    </div>
+	    <div class="row">
+	      	<div class="input-group-heading">Personal Interests</div>
+	        
+	        <div class="input-field col s12 row">
+	         <!--  <textarea placeholder="Interests" class="col s12" id='interests' name='interests'></textarea> -->
+	          <div class='card-panel' id='interests'>
+	          	
+	          </div>
+	          <i class="material-icons prefix">accessible</i>
+	          <input id="pi" type="text" class="validate col s11" placeholder="enter an interest to add">
+	          <button type="button" class="btn btn-floating waves-effect waves-light green lighten-1 col"
+	           style="padding-left: 0;" id='add-btn'>
+	          	<i class="material-icons">add</i>
+	          </button>
+	        </div>    
+    	</div>
+	    <div class="row">
+     	 <button type="submit" id='submit-btn' class="btn waves-effect waves-light red lighten-1 col s12"> Submit</button>
+     	</div>
+      </div>
+      <div class='card-panel red-text' id='error'>
+
+      </div>
+    </form>
+    <!-- end form -->
+
+  	</div>
+	</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>
